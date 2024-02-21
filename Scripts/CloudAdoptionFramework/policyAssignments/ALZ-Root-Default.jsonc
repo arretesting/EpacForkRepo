@@ -12,7 +12,7 @@
         "emailSecurityContact": "", // Security contact email address for Microsoft Defender for Cloud
         "ascExportResourceGroupName": "mdfc-export", // Resource group to export Microsoft Defender for Cloud data to
         "ascExportResourceGroupLocation": "", // Location of the resource group to export Microsoft Defender for Cloud data to
-        "dataCollectionRuleResourceId": "" // Resource Id for the DCR for Azure Monitor - see https://github.com/Azure/Enterprise-Scale/blob/main/eslzArm/resourceGroupTemplates/dataCollectionRule.json
+        "dcrResourceId": "" // Resource Id for the DCR for Azure Monitor - see https://github.com/Azure/Enterprise-Scale/blob/main/eslzArm/resourceGroupTemplates/dataCollectionRule.json
     },
     "children": [
         {
@@ -198,10 +198,10 @@
                         "description": "Enable Azure Monitor for the virtual machines (VMs) in the specified scope (management group, subscription or resource group). Takes Log Analytics workspace as parameter."
                     },
                     "definitionEntry": {
-                        "policySetId": "/providers/Microsoft.Authorization/policySetDefinitions/924bfe3a-762f-40e7-86dd-5c8b95eb09e6",
+                        "policySetId": "/providers/Microsoft.Authorization/policySetDefinitions/924bfe3a-762f-40e7-86dd-5c8b95eb09e6"
                     },
                     "parameters": {
-                        "bringYourOwnUserAssignedManagedIdentity": "false"
+                        "bringYourOwnUserAssignedManagedIdentity": false
                     },
                     "nonComplianceMessages": [
                         {
@@ -221,7 +221,7 @@
                         "displayName": "VMSS Monitoring"
                     },
                     "parameters": {
-                        "bringYourOwnUserAssignedManagedIdentity": "false"
+                        "bringYourOwnUserAssignedManagedIdentity": false
                     },
                     "nonComplianceMessages": [
                         {
