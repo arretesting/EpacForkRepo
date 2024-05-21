@@ -11,12 +11,12 @@
         "logAnalyticsWorkspaceId": "", // Replace with your central Log Analytics workspace ID
         "userAssignedManagedIdentityName": "", // Replace with the name of the user assigned managed identity to deploy
         "userAssignedIdentityName": "", // Replace with the name of the user assigned managed identity to deploy
-        "bringYourOwnUserAssignedManagedIdentity": "true",
+        "bringYourOwnUserAssignedManagedIdentity": true,
         "enableProcessesAndDependencies": true,
         "userAssignedManagedIdentityResourceGroup": "", //Replace with the name of the resource group where the user assigned managed identity is deployed
         "identityResourceGroup": "", // Replace with the name of the resource group where the user assigned managed identity is to be deployed
         "scopeToSupportedImages": false,
-        "builtInIdentityResourceGroupLocation": "australiaeast"
+        "builtInIdentityResourceGroupLocation": "" // Replace with the resource group location
     },
     "children": [
         {
